@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Portfolio of Pratheek Ravi Kumar, a full-stack developer building thoughtful web and AI product experiences."
+    />
+    <script>
+      document.documentElement.classList.toggle(
+        "dark",
+        window.localStorage.getItem("theme") !== "light",
+      );
+    </script>
+    <title>Pratheek Ravi Kumar</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
