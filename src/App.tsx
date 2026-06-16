@@ -243,9 +243,9 @@ function App() {
 function ParticleBackground({ theme }: { theme: "light" | "dark" }) {
   const shouldReduceMotion = useReducedMotion();
   const particleColor =
-    theme === "dark" ? "hsl(0 0% 93% / 0.42)" : "hsl(0 0% 8% / 0.22)";
+    theme === "dark" ? "hsl(0 0% 96% / 0.62)" : "hsl(0 0% 8% / 0.32)";
   const lineColor =
-    theme === "dark" ? "hsl(0 0% 93% / 0.08)" : "hsl(0 0% 8% / 0.06)";
+    theme === "dark" ? "hsl(0 0% 96% / 0.12)" : "hsl(0 0% 8% / 0.09)";
 
   return (
     <div
@@ -269,19 +269,19 @@ function ParticleBackground({ theme }: { theme: "light" | "dark" }) {
             width: particle.size,
             height: particle.size,
             backgroundColor: particleColor,
-            boxShadow: `0 0 ${particle.size * 6}px ${particleColor}`,
+            boxShadow: `0 0 ${particle.size * 9}px ${particleColor}`,
           }}
           initial={false}
           animate={
             shouldReduceMotion
-              ? { opacity: theme === "dark" ? 0.28 : 0.18 }
+              ? { opacity: theme === "dark" ? 0.42 : 0.26 }
               : {
                   x: [0, particle.x, 0],
                   y: [0, particle.y, 0],
                   opacity: [
-                    theme === "dark" ? 0.22 : 0.12,
-                    theme === "dark" ? 0.55 : 0.32,
-                    theme === "dark" ? 0.22 : 0.12,
+                    theme === "dark" ? 0.34 : 0.18,
+                    theme === "dark" ? 0.72 : 0.42,
+                    theme === "dark" ? 0.34 : 0.18,
                   ],
                   scale: [1, index % 2 === 0 ? 1.45 : 1.2, 1],
                 }

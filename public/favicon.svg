@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <style>
+    :root {
+      color-scheme: light dark;
+    }
+
+    .bg {
+      fill: #0a0a0a;
+    }
+
+    .ring,
+    .spark,
+    .pr {
+      stroke: #f2f2f2;
+    }
+
+    .node {
+      fill: #f2f2f2;
+    }
+
+    @media (prefers-color-scheme: light) {
+      .bg {
+        fill: #f7f7f7;
+      }
+
+      .ring,
+      .spark,
+      .pr {
+        stroke: #141414;
+      }
+
+      .node {
+        fill: #141414;
+      }
+    }
+  </style>
+  <rect class="bg" width="64" height="64" rx="16" />
+  <path
+    class="ring"
+    d="M18 12h28a6 6 0 0 1 6 6v28a6 6 0 0 1-6 6H18a6 6 0 0 1-6-6V18a6 6 0 0 1 6-6Z"
+    fill="none"
+    stroke-width="3"
+  />
+  <path
+    class="spark"
+    d="M22 20l3 5 5 3-5 3-3 5-3-5-5-3 5-3 3-5Z"
+    fill="none"
+    stroke-linejoin="round"
+    stroke-width="2.8"
+  />
+  <path
+    class="pr"
+    d="M36 20v18a8 8 0 0 1-8 8h-3M36 28h8"
+    fill="none"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    stroke-width="4"
+  />
+  <circle class="node" cx="36" cy="20" r="4" />
+  <circle class="node" cx="44" cy="28" r="4" />
+  <circle class="node" cx="25" cy="46" r="4" />
+</svg>
