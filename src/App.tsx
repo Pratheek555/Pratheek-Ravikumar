@@ -13,6 +13,7 @@ import {
   Moon,
   Sun,
 } from "lucide-react";
+import { Analytics } from "@vercel/analytics/react";
 
 import {
   calComPullRequests,
@@ -236,6 +237,7 @@ function App() {
           (c) 2026 {profile.name}
         </footer>
       </div>
+      <Analytics />
     </main>
   );
 }
